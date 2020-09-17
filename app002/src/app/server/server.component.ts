@@ -16,7 +16,7 @@ export class ServerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getServerStatus() {
+  getServerStatus(): string {
     return this.serverStatus;
   }
 
