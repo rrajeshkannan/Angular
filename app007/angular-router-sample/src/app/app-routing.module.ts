@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const appRoutes: Routes = [
   { path: '', redirectTo: '/heroes', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
+  { path: 'compose', component: ComposeMessageComponent, outlet: 'popup' },
 ];
 
 @NgModule({

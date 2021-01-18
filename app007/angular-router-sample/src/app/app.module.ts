@@ -10,6 +10,7 @@ import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ComposeMessageComponent } from './compose-message/compose-message.component';
 // import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 @NgModule({
@@ -22,7 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CrisisCenterModule,
     AppRoutingModule,
   ],
-  declarations: [AppComponent, PageNotFoundComponent],
+  declarations: [AppComponent, PageNotFoundComponent, ComposeMessageComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
