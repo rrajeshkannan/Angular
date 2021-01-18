@@ -8,13 +8,19 @@ import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, CrisisListComponent, HeroesListComponent, PageNotFoundComponent],
+  declarations: [
+    AppComponent,
+    CrisisListComponent,
+    HeroesListComponent,
+    PageNotFoundComponent,
+  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: 'crisis-list', component: CrisisListComponent },
       { path: 'heroes-list', component: HeroesListComponent },
       { path: '', redirectTo: '/heroes-list', pathMatch: 'full' },
+      { path: '**', component: PageNotFoundComponent },
     ]),
   ],
   providers: [],
